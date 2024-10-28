@@ -1,0 +1,24 @@
+.Orb{
+    width:70vh;
+    height:70vh;
+    position:absolute;
+    border-radius:50%;
+    margin-top: -37vh;
+    margin-left: -37vh;
+    /* background:linear-gradient(180deg, #F56692 0%, #F2994A 100%); */
+    background:linear-gradient(180deg, #2b2828d8 0%, rgb(52, 56, 59) 100%);
+    filter:blur(300px);
+    animation: moveOrb 15s alternate linear infinite;
+}
+
+@keyframes moveOrb{
+    0% {
+        transform: translate(0,0);
+    }
+    50% {
+        transform: translate(500px,600px);
+    }
+    100% {
+        transform: translate(0,0);
+    }
+  }

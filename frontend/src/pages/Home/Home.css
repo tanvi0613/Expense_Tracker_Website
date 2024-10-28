@@ -1,0 +1,116 @@
+.Landing {
+    background-image: url(../../img/download\ \(2\).jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+  }
+  
+  .main {
+  height: 120vh;
+  display: flex;
+  }
+  
+  .btns {
+    display: flex;
+    margin: 10px 0 0 250px;
+  }
+  
+  .landing-btn,.landing-btn2 {
+    background-color: transparent;
+    height: 45px;
+    width: 140px;
+    margin-right: 10px;
+    padding: 10px 14px;
+    border: 2px solid black;
+    cursor: pointer;
+    font-family: 'Arial', sans-serif;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    outline: none;
+  }
+  
+  .landing-btn:hover,.landing-btn2:hover {
+    background-color: black;
+    color: white;
+    transform: scale(1.1);
+  }
+  
+  
+  .heading {
+    font-family: 'BehanceFont', sans-serif;
+    font-size: 80px;
+    margin: 180px 0 0 250px;
+  }
+  
+  .tagline {
+    font-family: 'BehanceFont', sans-serif;
+    margin: 0 0 0 250px;
+    color: rgb(49, 48, 48);
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  footer {
+    height: 30px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 5px 0 0 0;
+    margin-top: -31px;
+  }
+  
+  .marquee {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  
+  .footer-content {
+    letter-spacing: 0.2em;
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 180s linear infinite;
+  }
+  
+  @keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+  }
+  
+  #logo {
+    margin: 20px 0 0 30px;
+    width: 140px;
+    height: 30px;
+  }
+  
+  .side {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+  }
+  
+  .side img {
+    height: 550px;
+    width: 400px;
+    margin-left: 100px;
+    margin-top: 148px;
+    position: absolute;
+  }
+  
+  h3 {
+    margin: 30px 0 0 670px;
+  }
+  .landing-btn2{
+    font-family: "Oswald", sans-serif;
+    font-size:14px;
+    letter-spacing: 0.04rem;
+  }
+  

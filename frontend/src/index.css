@@ -1,0 +1,34 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+body {
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  
+  @font-face {
+    font-family: 'BehanceFont'; 
+    src: url('../public/fonts/behance-656346cc88819.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  .cursor__dot div {
+    z-index: 999999 !important;
+  }
+  
+  .cursor__dot div:last-child {
+    background-color: #1a1a1a !important;
+  }
+  
+  .cursor__dot div:first-child {
+    background-color: rgba(116, 114, 114, 0.8) !important;
+  }
+  
+  *::-webkit-scrollbar {
+    display: none;
+  }

@@ -1,5 +1,6 @@
 const express = require('express');
 const mongoose = require('mongoose');
+const cors = require('cors');
 const userRouter = require('./routes/userRouter');
 const errorHandler = require('./middlewares/errorHandlerMiddleware');
 const categoryRouter = require('./routes/categoryRouter');
@@ -10,6 +11,11 @@ const app = express();
 
 mongoose.connect('mongodb://localhost:27017/mern-expenses').then(() => console.log('DB connected')).catch((e) => console.log(e));
 
+//cors config
+const corsOptions = {
+    origin:['http://localhost:3000']
+}
+app.use(cors(corsOptions));
 
 //MIDDLEWARES
 app.use(express.json())  //pass incoming data

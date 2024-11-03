@@ -1,0 +1,97 @@
+.chart-main{
+    border: 2px solid #FFFFFF;
+    box-shadow: 0px 1px 15px rgba(0,0,0,0.06);
+    padding: 1rem;
+    border-radius: 20px;
+    height: 100%;
+    text-align: center;
+    background-color: #dbd7d9;
+    border-radius: 20px;
+}
+
+.chart-text{
+    font-family: 'BehanceFont', sans-serif;
+}
+
+.chart-text-history{
+    font-family: 'BehanceFont', sans-serif;
+    top:30px;
+    left:840px;
+    white-space: nowrap;
+    position: absolute;
+    font-size: 27px;
+}
+
+.chart-totals{
+    display: flex;
+    margin-left: 100px;
+}
+.chart-income-display{
+    background-color: #dbd7d9;
+    margin:50px 20px 0 0;
+    padding: 30px 30px 0 30px;
+    border-radius: 20px;
+    height:50px;
+    font-family: 'BehanceFont', sans-serif;
+    font-weight: bold;
+    font-size: larger;
+    border: 2px solid #FFFFFF;
+}
+
+.chart-expense-display{
+    background-color: #dbd7d9;
+    margin:50px 20px 0 0;
+    padding: 30px 30px 0 30px;
+    border-radius: 20px;
+    height:50px;
+    font-family: 'BehanceFont', sans-serif;
+    font-weight: bold;
+    font-size: larger;
+    border: 2px solid #FFFFFF;
+}
+
+.recent-transactions{
+    position: absolute;
+    top:80px;
+    left:800px;
+    width:265px;
+    height:200px;
+    margin: 1rem 0;
+}
+
+  .transaction-list-recent {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .transaction-item-recent{
+    border: 1px solid #ddd;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    background-color: #dbd7d9d9;
+    display: flex;
+    height:40px;
+    margin-bottom: 20px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .amount.income {
+    color: #1ABC9C;
+  }
+  
+  .amount.expense {
+    color: #8E44AD;
+  }
+  
+  .no-transactions {
+    text-align: center;
+    font-size: 1rem;
+  }
+  
+  .transaction-list-recent,
+  .transaction-item-recent,
+  .no-transactions {
+    white-space: nowrap;
+  }
+  

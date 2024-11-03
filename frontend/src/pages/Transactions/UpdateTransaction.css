@@ -1,37 +1,35 @@
-.addCategory-top{
-  background: url(../../img/dashboardBack.jpg);
-  background-size: cover;
-  height: 100vh;
+.dashboard{
+    background: url(../../img/dashboardBack.jpg);
+    background-size: cover;
+    height: 100vh;
 }
 
 .ele3{
-  width: 70px;
-  height: 70px;
-  position: absolute;
-  top: 10px;
-  left: 310px;
-  transform: rotate(-20deg);
-  z-index: 2;
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 10px;
+    left: 310px;
+    transform: rotate(-20deg);
+    z-index: 2;
 }
 .navigations{
-  z-index: 1;
+    z-index: 1;
 }
 
-.category-container {
-  top:120px;
-  left: 620px;
-  position: absolute;
-  width: 65%;
-  height:63%;
-  margin: 2rem auto;
-  padding: 2rem;
-  background-color: #bbb8b8;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
+.form-container {
+    margin: 2rem auto;
+    width:65%;
+    left: 410px;
+    background-color: #bbb8b8;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
   
-  .text-center {
+  .form-header {
     text-align: center;
+    margin-bottom: 1.5rem;
   }
   
   .form-title {
@@ -49,11 +47,11 @@
     font-size: large;
   }
   
-  .form-group {
+  .input-group {
     margin-bottom: 1.5rem;
   }
   
-  .form-label {
+  .input-label {
     display: flex;
     align-items: center;
     font-weight: 500;
@@ -61,16 +59,17 @@
     margin-bottom: 0.5rem;
   }
   
-  .icon-category{
+  .icon {
     color: #333;
     margin-right: 0.5rem;
   }
 
-#type-form{
-  height:50px;
-  width:100%;
-}
-  .form-input {
+  #type-form{
+    height:53px;
+    width:100%;
+  }
+
+  .input-field {
     width: 97%;
     height:30px;
     padding: 0.75rem;
@@ -80,19 +79,19 @@
     transition: border-color 0.3s;
   }
   
-  .form-input:focus {
+  .input-field:focus {
     border-color: #5656569a;
     outline: none;
-    box-shadow: 0 0 0 3px #5656569a;
+    box-shadow: 0px 0px 5px #5656569a;
   }
   
-  .form-error {
-    color: #e74c3c;
-    font-size: 12px;
+  .error-text {
+    color: #e63946;
+    font-size: 0.875rem;
     margin-top: 0.25rem;
   }
   
-  .form-button {
+  .submit-button {
     display: block;
     width: 100%;
     padding: 0.75rem;
@@ -107,8 +106,8 @@
     transition: background-color 0.3s;
   }
   
-  .form-button:hover {
-    transform: scale(1.05);
+  .submit-button:hover {
+    transform: scale(1.03);
     background-color: rgb(18, 18, 18);
   }
   

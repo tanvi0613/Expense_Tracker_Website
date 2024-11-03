@@ -9,6 +9,10 @@ import Dashboard from './pages/Dashboard/Dashboard';
 import AddCategory from './pages/Category/AddCategory';
 import CategoriesList from './pages/Category/CategoriesList';
 import UpdateCategory from './pages/Category/UpdateCategory';
+import TransactionForm from './pages/Transactions/TransactionForm';
+import UpdatePassword from './pages/User/UpdatePassword';
+import AuthRoute from './components/Auth/AuthRoute';
+import UpdateTransaction from './pages/Transactions/UpdateTransaction';
 
 
 function App() {
@@ -31,10 +35,15 @@ function App() {
         <Route path='/' element={<Home />} />
         <Route path='/login' element={<Login />} />
         <Route path='/register' element={<Register />} />
-        <Route path='/dashboard' element={<Dashboard />} />
-        <Route path='/addCategory' element={<AddCategory />} />
-        <Route path='/categories' element={<CategoriesList />} />
-        <Route path='/update-category/:id' element={<UpdateCategory />} />
+
+        {/* Using Higher Order Function(AuthRoute) to protect routes when user is not logged in */}
+        <Route path='/dashboard' element={<AuthRoute><Dashboard/></AuthRoute>} />
+        <Route path='/addCategory' element={<AuthRoute><AddCategory/></AuthRoute>} />
+        <Route path='/categories' element={<AuthRoute><CategoriesList/></AuthRoute>} />
+        <Route path='/update-category/:id' element={<AuthRoute><UpdateCategory/></AuthRoute>} />
+        <Route path='/update-transaction/:id' element={<AuthRoute><UpdateTransaction/></AuthRoute>} />
+        <Route path='/add-transaction' element={<AuthRoute><TransactionForm/></AuthRoute>} />
+        <Route path='/update-password' element={<AuthRoute><UpdatePassword/></AuthRoute>} />
       </Routes>
     </BrowserRouter>
   );

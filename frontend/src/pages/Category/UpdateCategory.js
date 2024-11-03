@@ -14,10 +14,8 @@ import Navigation from '../../components/Navigation/Navigation'
 
 
 const validationSchema = Yup.object({
-  name: Yup.string().required("Category name is required"),
-  type: Yup.string()
-    .required("Category type is required")
-    .oneOf(["income", "expense"]),
+  name: Yup.string(),
+  type: Yup.string().oneOf(["income", "expense"]),
 });
 
 const UpdateCategory = () => {

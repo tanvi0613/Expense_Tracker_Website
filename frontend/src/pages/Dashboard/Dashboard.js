@@ -3,6 +3,9 @@ import './Dashboard.css'
 import ele3 from '../../img/ele3.png';
 import TopNav from '../../components/TopNav/TopNav'
 import Navigation from '../../components/Navigation/Navigation'
+import TransactionList from '../Transactions/TransactionList';
+import TransactionChart from '../Transactions/TransactionChart';
+
 
 function Dashboard() {
 
@@ -14,6 +17,12 @@ function Dashboard() {
             <div className='navigations'>
                 <TopNav/>
                 <Navigation active={active} setActive={setActive}/>
+            </div>
+            <div className='chart-display'>
+                <TransactionChart />
+            </div>
+            <div>
+                <TransactionList />
             </div>
         </section>
     )

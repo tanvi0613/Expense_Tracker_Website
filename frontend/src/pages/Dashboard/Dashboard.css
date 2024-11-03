@@ -16,3 +16,10 @@
 .navigations{
     z-index: 1;
 }
+
+.chart-display{
+    position: absolute;
+    top:140px;
+    left:400px;
+    width:50%;
+}

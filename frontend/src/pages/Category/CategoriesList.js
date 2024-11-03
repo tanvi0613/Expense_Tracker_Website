@@ -30,7 +30,7 @@ const CategoriesList = () => {
       .catch((e) => console.log(e));
   };
 
-  const [active, setActive] = useState(1);
+  const [active, setActive] = useState(3);
 
   return (
     <section className='dashboard'>

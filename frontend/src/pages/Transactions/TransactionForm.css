@@ -1,0 +1,119 @@
+.addCategory-top{
+    background: url(../../img/dashboardBack.jpg);
+    background-size: cover;
+    height: 100vh;
+  }
+  
+  .ele3{
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 10px;
+    left: 310px;
+    transform: rotate(-20deg);
+    z-index: 2;
+  }
+  .navigations{
+    z-index: 1;
+  }
+
+.form-container {
+  top: 60px;
+  height:79%;
+  position: absolute;
+  margin: 2rem auto;
+  background-color: #bbb8b8;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: scroll;
+}
+  
+  .form-header {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-header h2 {
+    font-family: 'BehanceFont', sans-serif;
+    letter-spacing: 0.2em;
+    font-size: 28px;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .form-header p {
+    color: #565656;
+    font-family: Oswald , sans-serif;
+    letter-spacing: 0.1em;
+    margin-bottom: -25px;
+  }
+  
+  .input-group {
+    margin-bottom: 0.8rem;
+  }
+  
+  .input-label {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    color: #555555;
+    margin-bottom: 0.5rem;
+  }
+  
+  .icon {
+    color: #333;
+    margin-right: 0.5rem;
+  }
+
+  .input-field-transaction{
+    width:100%;
+    height:45px;
+    padding: 0.75rem;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    background-color: #5656569a
+  }
+
+  .input-field {
+    width: 97.5%;
+    height:20px;
+    padding: 0.75rem;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  .input-field:focus {
+    border-color: #5656569a;
+    outline: none;
+    box-shadow: 0px 0px 5px #5656569a;
+  }
+  
+  .error-text {
+    color: #e63946;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+  }
+  
+  .submit-button {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #565656ee;
+    color: #fff;
+    height:50px;
+    font-weight: bold;
+    border: none;
+    margin-top: 45px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .submit-button:hover {
+    transform: scale(1.01);
+    background-color: rgb(18, 18, 18);
+  }
+  

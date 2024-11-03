@@ -36,7 +36,7 @@ const AddCategory = () => {
     },
   });
 
-  const [active, setActive] = useState(1);
+  const [active, setActive] = useState(2);
 
   return (
     <section className='addCategory-top'>
@@ -45,7 +45,7 @@ const AddCategory = () => {
           <TopNav/>
           <Navigation active={active} setActive={setActive}/>
       </div>
-      <form onSubmit={formik.handleSubmit} className="form-container">
+      <form onSubmit={formik.handleSubmit} className="category-container">
           <div className="text-center">
               <h2 className="form-title">Add New Category</h2>
               <p className="form-subtitle">Categorize expenses wisely to understand spending patterns</p>

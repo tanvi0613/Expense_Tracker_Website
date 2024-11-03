@@ -18,7 +18,10 @@ function Navigation({ active, setActive }) {
           return (
             <li
               key={item.id}
-              onClick={() => setActive(item.id)}
+              onClick={() => {
+                console.log(`Navigating to ${item.link}`);
+                setActive(item.id);
+              }}
               className={active === item.id ? 'active' : ''}
             >
               <Link to={item.link}>

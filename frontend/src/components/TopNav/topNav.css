@@ -56,6 +56,27 @@
     transition: all 0.4s ease-in-out;
 }
 
+.leftSide{
+    list-style-type: none;
+    padding: 0;
+}
+
+.leftSide li {
+    display: grid;
+    grid-template-columns: 40px auto;
+    align-items: center;
+    margin: 30px 50px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+    color: black;
+}
+
+.leftSide li i {
+    font-size: 1.4rem;
+    color: black;
+    transition: all 0.4s ease-in-out;
+}
 
 @media (max-width: 1024px) {
     .TopNav {
@@ -118,3 +139,4 @@
         font-size: 0.9rem;
     }
 }
+

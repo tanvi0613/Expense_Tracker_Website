@@ -4,14 +4,23 @@ import { BASE_URL } from "../../utils/url";
 
 //Get the token
 const token = getUserFromStorage();
-console.log("Token:", token); 
+
 
 //Add
-export const addCategoryAPI = async ({ name, type }) => {
+export const addTransactionAPI = async ({
+  type,
+  category,
+  date,
+  description,
+  amount,
+}) => {
   const response = await axios.post(
-    `${BASE_URL}/categories/create`,
+    `${BASE_URL}/transactions/create`,
     {
-      name,
+      category,
+      date,
+      description,
+      amount,
       type,
     },
     {
@@ -26,12 +35,22 @@ export const addCategoryAPI = async ({ name, type }) => {
 
 
 //update
-export const updateCategoryAPI = async ({ name, type, id }) => {
+export const updateTransactionAPI = async ({
+  id,
+  description,
+  amount,
+  date,
+  type,
+  category,
+}) => {
   const response = await axios.put(
-    `${BASE_URL}/categories/update/${id}`,
+    `${BASE_URL}/transactions/update/${id}`,
     {
-      name,
+      description,
+      amount,
+      date,
       type,
+      category,
     },
     {
       headers: {
@@ -39,14 +58,15 @@ export const updateCategoryAPI = async ({ name, type, id }) => {
       },
     }
   );
-  //Return a promise
+  
+  // Return the updated transaction data
   return response.data;
 };
 
 
 //delete
-export const deleteCategoryAPI = async (id) => {
-  const response = await axios.delete(`${BASE_URL}/categories/delete/${id}`, {
+export const deleteTransactionAPI = async (id) => {
+  const response = await axios.delete(`${BASE_URL}/transactions/delete/${id}`, {
     headers: {
       Authorization: `Bearer ${token}`,
     },
@@ -57,8 +77,14 @@ export const deleteCategoryAPI = async (id) => {
 
 
 //lists
-export const listCategoriesAPI = async () => {
-  const response = await axios.get(`${BASE_URL}/categories/list`, {
+export const listTransactionsAPI = async ({
+  category,
+  type,
+  startDate,
+  endDate,
+}) => {
+  const response = await axios.get(`${BASE_URL}/transactions/list`, {
+    params: { category, endDate, startDate, type },
     headers: {
       Authorization: `Bearer ${token}`,
     },

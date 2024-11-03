@@ -1,0 +1,117 @@
+.transaction-container {
+    padding: 16px;
+    background-color: #a4a1a1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .filter-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 16px;
+  }
+  
+  .filter-input,
+  .filter-select {
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #a1a1a1;
+    outline: none;
+    background-color: #e7e6e6;
+  }
+
+  .filter-types-tran1{
+    right: 398px;
+    width:363px;
+    position: absolute; 
+  }
+  
+  .filter-types-tran2{
+    right: 20px;
+    width:363px;
+    position: absolute; 
+  }
+
+  .transaction-list {
+    background-color: #c8c9cb;
+    padding: 16px;
+    border-radius: 8px;
+  }
+  
+  .transaction-title {
+    font-family: 'BehanceFont', sans-serif;
+    letter-spacing: 0.2em;
+    font-size: 1.25rem;
+    color: #374151;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+  
+  .transaction-items {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .transaction-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    background-color: #e7e6e6;
+    border-radius: 6px;
+    margin-bottom: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  }
+  
+  .transaction-item.income {
+    border-left: 4px solid #1ABC9C;
+  }
+  
+  .transaction-item.expense {
+    border-left: 4px solid #8E44AD;
+  }
+  
+  .transaction-date {
+    color: #6b7280;
+  }
+  
+  .transaction-type {
+    background-color: #e5e7eb;
+    color: #374151;
+    font-weight: 500;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+  }
+  
+  .transaction-category {
+    color: #111827;
+  }
+  
+  .transaction-description {
+    font-size: 0.875rem;
+    color: #6b7280;
+    font-style: italic;
+  }
+  
+  .transaction-actions {
+    display: flex;
+    gap: 8px;
+  }
+  
+  .edit-button,
+  .delete-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .edit-button:hover {
+    color: #2563eb;
+  }
+  
+  .delete-button:hover {
+    color: #dc2626;
+  }
+  

@@ -3,6 +3,8 @@ export const transactions = <i className="fa-solid fa-credit-card"></i>
 export const categories = <i class="fa-solid fa-tag"></i>
 export const addCategory = <i class="fa-solid fa-layer-group"></i>
 export const updateCategory = <i class="fa-solid fa-pen"></i>
+export const updatePassword = <i class="fa-solid fa-lock"></i>
+
 
 export const accounts = <i class="fa-solid fa-wallet"></i>
 export const settings = <i class="fa-solid fa-gear"></i>

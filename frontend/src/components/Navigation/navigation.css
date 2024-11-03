@@ -1,0 +1,144 @@
+.Navigation {
+    padding: 2rem;
+    width: 270px;
+    max-width: 100%;
+    height: 661px;
+    background: rgba(211, 209, 210, 0.63);
+    border: 3px solid #b3b1b1;
+    backdrop-filter: blur(4.5px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2rem;
+    margin: -110px 0 0 0;
+    overflow: hidden;
+}
+
+#logo{
+    width:130px;
+    height:30px;
+    margin-bottom: 40px;
+}
+
+.text {
+    color: black;
+}
+
+.profile-h2{
+    margin-left:-160px;
+}
+
+.profile-p{
+    margin-left:-145px;
+}
+
+.menu-items {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.menu-items li {
+    display: grid;
+    grid-template-columns: 40px auto;
+    align-items: center;
+    margin: .8rem 0;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+    color: rgb(99, 96, 96);
+    padding-left: 1rem;
+    position: relative;
+}
+
+.menu-items li a {
+    text-decoration: none;
+    color: inherit; /* Keep the color the same as the parent <li> */
+}
+
+.menu-items li i {
+    color: rgb(99, 96, 96);
+    font-size: 1.4rem;
+    transition: all .4s ease-in-out;
+}
+
+.active {
+    color: black !important;
+}
+
+.active i {
+    color: black !important;
+}
+
+.active::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 4px;
+    height: 100%;
+    background: black;
+    border-radius: 0 10px 10px 0;
+}
+
+@media (max-width: 1024px) {
+    .Navigation {
+        width: 100%;
+        margin: 0;
+        height: auto;
+        padding: 1rem;
+    }
+
+    .menu-items {
+        flex-direction: row;
+        overflow-x: auto;
+        gap: 1rem;
+    }
+
+    .menu-items li {
+        grid-template-columns: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .Navigation {
+        padding: 1rem;
+        height: auto;
+    }
+
+    .user-con {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    #logo {
+        width: 120px;
+        height: 25px;
+    }
+
+    .menu-items li {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .Navigation {
+        padding: 0.5rem;
+    }
+
+    .user-con {
+        font-size: 0.8rem;
+    }
+
+    .menu-items li {
+        font-size: 0.8rem;
+    }
+}
+
+.ele4{
+    transform: rotate(30deg);
+    width:350px;
+    height: 500px;
+    margin: -100px 0 0 5px;
+}

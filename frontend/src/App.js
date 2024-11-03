@@ -1,16 +1,19 @@
 import './App.css';
 import AnimatedCursor from 'react-animated-cursor';
+import {useSelector} from 'react-redux'
 import {BrowserRouter, Route, Routes} from 'react-router-dom'
 import Home from './pages/Home/Home'
 import Login from './pages/Login/Login'
 import Register from './pages/Register/Register'
-import { getUserFromStorage } from './utils/getUserFromStorage';
+import Dashboard from './pages/Dashboard/Dashboard';
+import AddCategory from './pages/Category/AddCategory';
+import CategoriesList from './pages/Category/CategoriesList';
+import UpdateCategory from './pages/Category/UpdateCategory';
 
 
 function App() {
-  //get the token
-  const token = getUserFromStorage();
-  console.log(token)
+  const user = useSelector((state) => state?.auth.user)
+  console.log(user);
 
   return (
     <BrowserRouter>
@@ -28,6 +31,10 @@ function App() {
         <Route path='/' element={<Home />} />
         <Route path='/login' element={<Login />} />
         <Route path='/register' element={<Register />} />
+        <Route path='/dashboard' element={<Dashboard />} />
+        <Route path='/addCategory' element={<AddCategory />} />
+        <Route path='/categories' element={<CategoriesList />} />
+        <Route path='/update-category/:id' element={<UpdateCategory />} />
       </Routes>
     </BrowserRouter>
   );

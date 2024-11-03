@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './Login.css'
 import { useFormik } from "formik";
 import * as Yup from 'yup';
+import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { useMutation } from "@tanstack/react-query";
 import ribbon from '../../img/ribbon.png';
@@ -17,6 +18,9 @@ const validationSchema = Yup.object({
 });
 
 function Login() {
+
+    //Navigate
+    const navigate = useNavigate();
 
     //Dispatch
     const dispatch = useDispatch();
@@ -51,6 +55,14 @@ function Login() {
         },
     });
 
+    //Redirect
+    useEffect(() => {
+        setTimeout(() => {
+        if (isSuccess) {
+            navigate("/dashboard");
+        }
+        }, 2000);
+    }, [navigate, isSuccess]);
 
     return (
         <section className='login-page'>

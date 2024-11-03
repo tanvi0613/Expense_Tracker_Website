@@ -2,6 +2,7 @@ import React from 'react';
 import './Home.css';
 import phone from '../../img/phone.png';
 import logo from '../../img/logo.png';
+import grayele1 from '../../img/grayele1.png';
 import { Link } from 'react-router-dom';
 
 function Landing() {
@@ -11,8 +12,11 @@ function Landing() {
             <div className="main">
                 <div className="left">
                 <img src={logo} id="logo" alt="logo" />
-                <p className="heading">Track your<br />expenses</p>
-                <p className="tagline">Effortlessly manage your finances and stay on top of your expenses.</p>
+                <div className='mid-home'>
+                    <img src={grayele1} id="grayele1" alt="grayele1" />
+                    <p className="heading"><span>Track your</span><br />expenses</p>
+                </div>
+                <p className="tagline"><span>Effortlessly manage your finances and stay on top of your expenses.</span></p>
                 <div className="btns">
                     <Link to="/login">
                         <button className="landing-btn">Login</button>
@@ -26,7 +30,7 @@ function Landing() {
                 <h3>
                     <button className="landing-btn2">Connect With Us</button>
                 </h3>
-                <img src={phone} alt="phone" />
+                <img src={phone} alt="phone" className='phone'/>
                 </div>
             </div>
         </section>

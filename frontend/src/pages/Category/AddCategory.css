@@ -1,0 +1,114 @@
+.addCategory-top{
+  background: url(../../img/dashboardBack.jpg);
+  background-size: cover;
+  height: 100vh;
+}
+
+.ele3{
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  top: 10px;
+  left: 310px;
+  transform: rotate(-20deg);
+  z-index: 2;
+}
+.navigations{
+  z-index: 1;
+}
+
+.form-container {
+  top:120px;
+  left: 620px;
+  position: absolute;
+  width: 65%;
+  height:63%;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #bbb8b8;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .form-title {
+    font-family: 'BehanceFont', sans-serif;
+    letter-spacing: 0.2em;
+    font-size: 28px;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .form-subtitle {
+    color: #565656;
+    font-family: Oswald , sans-serif;
+    letter-spacing: 0.1em;
+    font-size: large;
+  }
+  
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-label {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    color: #444;
+    margin-bottom: 0.5rem;
+  }
+  
+  .icon-category{
+    color: #333;
+    margin-right: 0.5rem;
+  }
+
+#type-form{
+  height:50px;
+  width:100%;
+}
+  .form-input {
+    width: 97%;
+    height:30px;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #5656569a;
+    transition: border-color 0.3s;
+  }
+  
+  .form-input:focus {
+    border-color: #5656569a;
+    outline: none;
+    box-shadow: 0 0 0 3px #5656569a;
+  }
+  
+  .form-error {
+    color: #e74c3c;
+    font-size: 12px;
+    margin-top: 0.25rem;
+  }
+  
+  .form-button {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #565656ee;
+    color: #fff;
+    height:50px;
+    font-weight: bold;
+    border: none;
+    margin-top: 70px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .form-button:hover {
+    transform: scale(1.05);
+    background-color: rgb(18, 18, 18);
+  }
+  

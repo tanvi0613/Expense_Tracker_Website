@@ -1,5 +1,5 @@
 .Landing {
-    background-image: url(../../img/download\ \(2\).jpg);
+    background-image: url(../../img/Untitled\ design.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -15,7 +15,9 @@
   
   .btns {
     display: flex;
-    margin: 10px 0 0 250px;
+    margin: 15px 0 0 325px;
+    z-index: 2;
+    position: relative;
   }
   
   .landing-btn,.landing-btn2 {
@@ -29,6 +31,7 @@
     font-family: 'Arial', sans-serif;
     transition: background-color 0.3s ease, transform 0.3s ease;
     outline: none;
+    font-weight: bold;
   }
   
   .landing-btn:hover,.landing-btn2:hover {
@@ -41,17 +44,24 @@
   .heading {
     font-family: 'BehanceFont', sans-serif;
     font-size: 80px;
-    margin: 180px 0 0 250px;
+    margin: 170px 0 0 -130px;
+    z-index: 2;
   }
   
+  .heading span {
+    white-space: nowrap;
+  }
+
   .tagline {
     font-family: 'BehanceFont', sans-serif;
-    margin: 0 0 0 250px;
+    margin: -150px 0 0 325px;
     color: rgb(49, 48, 48);
     font-family: "Oswald", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+    z-index: 2;
+    position: relative;
   }
   
   footer {
@@ -90,27 +100,51 @@
     width: 140px;
     height: 30px;
   }
-  
+
+.mid-home{
+  display: flex;
+}
+
+#grayele1{
+  width:350px;
+  height:500px;
+  margin:40px 0 0 100px;
+  z-index: 1;
+  transform: rotate(10deg);
+}
+
   .side {
     display: flex;
     justify-content: center;
     flex: 1;
   }
   
-  .side img {
+  @keyframes slideUp {
+    0% {
+      opacity: 0;
+      transform: translateY(100px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .phone{
     height: 550px;
     width: 400px;
-    margin-left: 100px;
+    margin-left: 40px;
     margin-top: 148px;
     position: absolute;
+    animation: slideUp 0.8s ease-out forwards;
   }
   
   h3 {
-    margin: 30px 0 0 670px;
+    position: relative;
+    margin: 30px 0 0 640px;
   }
   .landing-btn2{
     font-family: "Oswald", sans-serif;
     font-size:14px;
     letter-spacing: 0.04rem;
   }
-  

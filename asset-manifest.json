@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/Expense_Tracker_Website/static/css/main.e65169e4.css",
+    "main.js": "/Expense_Tracker_Website/static/js/main.ea4b6a89.js",
+    "static/media/avatar2.png": "/Expense_Tracker_Website/static/media/avatar2.236d078b2e631dcf9f89.png",
+    "static/media/Untitled design.png": "/Expense_Tracker_Website/static/media/Untitled design.da9faa3b6de7199aeacf.png",
+    "static/media/phone.png": "/Expense_Tracker_Website/static/media/phone.c55e680e6807cb5fc793.png",
+    "static/media/behance-656346cc88819.otf": "/Expense_Tracker_Website/static/media/behance-656346cc88819.dbd58968526be3ff8546.otf",
+    "static/media/ele4.png": "/Expense_Tracker_Website/static/media/ele4.acbf120d4da79fc417b4.png",
+    "static/media/ribbon.png": "/Expense_Tracker_Website/static/media/ribbon.c31319e7053ecce5c92f.png",
+    "static/media/ele3.png": "/Expense_Tracker_Website/static/media/ele3.731d4d0ab7af80686cda.png",
+    "static/media/dashboardBack.jpg": "/Expense_Tracker_Website/static/media/dashboardBack.8d076a3041104e6051ec.jpg",
+    "static/media/grayele1.png": "/Expense_Tracker_Website/static/media/grayele1.eef625c1a4664281813b.png",
+    "static/media/loginCover.jpg": "/Expense_Tracker_Website/static/media/loginCover.fdf6e70a71476798a6c7.jpg",
+    "static/media/grayele2.png": "/Expense_Tracker_Website/static/media/grayele2.63cf41eb9c189cea4e71.png",
+    "static/media/logo.png": "/Expense_Tracker_Website/static/media/logo.832e691411293a1386ce.png",
+    "index.html": "/Expense_Tracker_Website/index.html",
+    "main.e65169e4.css.map": "/Expense_Tracker_Website/static/css/main.e65169e4.css.map",
+    "main.ea4b6a89.js.map": "/Expense_Tracker_Website/static/js/main.ea4b6a89.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e65169e4.css",
+    "static/js/main.ea4b6a89.js"
+  ]
+}

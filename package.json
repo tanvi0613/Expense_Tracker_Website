@@ -1,0 +1,13 @@
+{
+  "name": "expense_tracker_website",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "backend": "npm run watch --prefix backend",
+    "frontend": "npm run start --prefix frontend",
+    "watch": "npm run backend & npm run frontend"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

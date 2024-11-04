@@ -10,7 +10,6 @@ import ribbon from '../../img/ribbon.png';
 import "./UpdatePassword.css";
 import { useNavigate } from "react-router-dom";
 
-
 const validationSchema = Yup.object({
   password: Yup.string()
     .min(5, "Password must be at least 5 characters long")
@@ -20,7 +19,6 @@ const validationSchema = Yup.object({
 const UpdatePassword = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
-
 
   const { mutateAsync, isPending, isError, error, isSuccess } = useMutation({
     mutationFn: changePasswordAPI,
@@ -37,14 +35,11 @@ const UpdatePassword = () => {
         .then(() => {
           dispatch(logoutAction());
           localStorage.removeItem("userInfo");
+          navigate('/login'); // Navigate only on successful password update
         })
         .catch((e) => console.log(e));
     },
   });
-
-  const handleUpdatePassword = () => {
-    navigate('/login');
-  };
 
   return (
     <section className='updatepassword-page'>
@@ -52,44 +47,41 @@ const UpdatePassword = () => {
       <img src={ribbon} alt='ribbon' className='ribbon1'></img>
       <img src={ribbon} alt='ribbon' className='ribbon2'></img>
       <div className="updatepassword-main">
-      <form onSubmit={formik.handleSubmit} className="updatepassword-form">
-      <h2 className="updatepassword-title">Change Your Password</h2><br/>
-        <div className="updatepassword-container">
-          <label className="updatepassword-label" htmlFor="new-password">
-            New Password
-          </label>
-          {isPending && <AlertMessage type="loading" message="Updating...." />}
-          {isError && (
-            <AlertMessage type="error" message={error.response.data.message} />
-          )}
-          {isSuccess && (
-            <AlertMessage
-              type="success"
-              message="Password updated successfully"
-            />
-          )}
-          <div className="updatepassword-wrapper">
-            <input
-              id="updatepassword-input"
-              type="password"
-              name="newPassword"
-              {...formik.getFieldProps("password")}
-              className="updatepassword-input"
-              placeholder="Enter new password"
-            />
+        <form onSubmit={formik.handleSubmit} className="updatepassword-form">
+          <h2 className="updatepassword-title">Change Your Password</h2><br/>
+          <div className="updatepassword-container">
+            <label className="updatepassword-label" htmlFor="new-password">
+              New Password
+            </label>
+            {isPending && <AlertMessage type="loading" message="Updating...." />}
+            {isError && (
+              <AlertMessage type="error" message={error?.response?.data?.message || "Error updating password"} />
+            )}
+            {isSuccess && (
+              <AlertMessage type="success" message="Password updated successfully" />
+            )}
+            <div className="updatepassword-wrapper">
+              <input
+                id="updatepassword-input"
+                type="password"
+                name="password"
+                {...formik.getFieldProps("password")}
+                className="updatepassword-input"
+                placeholder="Enter new password"
+              />
+            </div>
+            {formik.touched.password && formik.errors.password && (
+              <span className="error-message">
+                {formik.errors.password}
+              </span>
+            )}
           </div>
-          {formik.touched.password && formik.errors.password && (
-            <span className="error-message">
-              {formik.errors.password}
-            </span>
-          )}
-        </div>
 
-        <button type="submit" className="updatepassword-button" onClick={handleUpdatePassword}>
-          Update Password
-        </button>
-      </form>
-    </div>
+          <button type="submit" className="updatepassword-button">
+            Update Password
+          </button>
+        </form>
+      </div>
     </section>
   );
 };

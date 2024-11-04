@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
@@ -9,11 +10,11 @@ const transactionRouter = require('./routes/transactionRoutes');
 const app = express();
 
 
-mongoose.connect('mongodb://localhost:27017/mern-expenses').then(() => console.log('DB connected')).catch((e) => console.log(e));
+mongoose.connect(process.env.MONGODB_URI).then(() => console.log('DB connected')).catch((e) => console.log(e));
 
 //cors config
 const corsOptions = {
-    origin:['http://localhost:3000']
+    origin : process.env.CORS_ORIGIN
 }
 app.use(cors(corsOptions));
 

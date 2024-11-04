@@ -2,6 +2,8 @@ const asyncHandler = require('express-async-handler');
 const User = require('../model/User');
 const bcryptjs = require('bcryptjs');
 const jwt = require('jsonwebtoken');
+require('dotenv').config();
+
 
 //User Registration
 const usersController = {
@@ -57,7 +59,7 @@ const usersController = {
        }
 
        //Generate a token
-       const token = jwt.sign({id:user._id}, "thisiskey",{expiresIn: "30d"});
+       const token = jwt.sign({id:user._id}, process.env.JWT_SECRET,{expiresIn: "30d"});
 
         //Send the response
         res.json({

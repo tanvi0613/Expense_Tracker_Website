@@ -1,4 +1,6 @@
 const jwt = require("jsonwebtoken");
+require('dotenv').config();
+
 
 const isAuthenticated = async (req, res, next) => {
   // Get the token from the header
@@ -6,7 +8,7 @@ const isAuthenticated = async (req, res, next) => {
   const token = headerObj?.authorization?.split(" ")[1];
 
   //Verify the token
-  const verifyToken = jwt.verify(token, 'thisiskey', (err, decoded) => {
+  const verifyToken = jwt.verify(token, process.env.JWT_SECRET, (err, decoded) => {
     if (err) {
       return false;
     } else {

@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Expense_Tracker_Website/static/css/main.e65169e4.css",
-    "main.js": "/Expense_Tracker_Website/static/js/main.ea4b6a89.js",
+    "main.css": "/Expense_Tracker_Website/static/css/main.908695c1.css",
+    "main.js": "/Expense_Tracker_Website/static/js/main.15196c03.js",
     "static/media/avatar2.png": "/Expense_Tracker_Website/static/media/avatar2.236d078b2e631dcf9f89.png",
     "static/media/Untitled design.png": "/Expense_Tracker_Website/static/media/Untitled design.da9faa3b6de7199aeacf.png",
     "static/media/phone.png": "/Expense_Tracker_Website/static/media/phone.c55e680e6807cb5fc793.png",
@@ -15,11 +15,11 @@
     "static/media/grayele2.png": "/Expense_Tracker_Website/static/media/grayele2.63cf41eb9c189cea4e71.png",
     "static/media/logo.png": "/Expense_Tracker_Website/static/media/logo.832e691411293a1386ce.png",
     "index.html": "/Expense_Tracker_Website/index.html",
-    "main.e65169e4.css.map": "/Expense_Tracker_Website/static/css/main.e65169e4.css.map",
-    "main.ea4b6a89.js.map": "/Expense_Tracker_Website/static/js/main.ea4b6a89.js.map"
+    "main.908695c1.css.map": "/Expense_Tracker_Website/static/css/main.908695c1.css.map",
+    "main.15196c03.js.map": "/Expense_Tracker_Website/static/js/main.15196c03.js.map"
   },
   "entrypoints": [
-    "static/css/main.e65169e4.css",
-    "static/js/main.ea4b6a89.js"
+    "static/css/main.908695c1.css",
+    "static/js/main.15196c03.js"
   ]
 }

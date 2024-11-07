@@ -14,7 +14,9 @@ mongoose.connect(process.env.MONGODB_URI).then(() => console.log('DB connected')
 
 //cors config
 const corsOptions = {
-    origin : process.env.CORS_ORIGIN
+    origin : ["https://deploy-mern-1whq.vercel.app"],
+    method: ["POST", "GET"],
+    credentials: true
 }
 app.use(cors(corsOptions));
 

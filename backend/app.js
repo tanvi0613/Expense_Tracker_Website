@@ -14,9 +14,7 @@ mongoose.connect(process.env.MONGODB_URI).then(() => console.log('DB connected')
 
 //cors config
 const corsOptions = {
-    origin : ["https://expense-tracker-website-b0es4zqwn.vercel.app"],
-    method: ["POST", "GET"],
-    credentials: true
+    origin : process.env.CORS_ORIGIN
 }
 app.use(cors(corsOptions));
 

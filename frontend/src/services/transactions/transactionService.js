@@ -14,7 +14,7 @@ export const addTransactionAPI = async ({
   amount,
 }) => {
   const response = await axios.post(
-    `${import.meta.env.BASE_URL}/transactions/create`,
+    `http://localhost:8000/api/v1/transactions/create`,
     {
       category,
       date,
@@ -43,7 +43,7 @@ export const updateTransactionAPI = async ({
   category,
 }) => {
   const response = await axios.put(
-    `${import.meta.env.BASE_URL}/transactions/update/${id}`,
+    `http://localhost:8000/api/v1/transactions/update/${id}`,
     {
       description,
       amount,
@@ -65,7 +65,7 @@ export const updateTransactionAPI = async ({
 
 //delete
 export const deleteTransactionAPI = async (id) => {
-  const response = await axios.delete(`${import.meta.env.BASE_URL}/transactions/delete/${id}`, {
+  const response = await axios.delete(`http://localhost:8000/api/v1/transactions/delete/${id}`, {
     headers: {
       Authorization: `Bearer ${token}`,
     },
@@ -82,7 +82,7 @@ export const listTransactionsAPI = async ({
   startDate,
   endDate,
 }) => {
-  const response = await axios.get(`${import.meta.env.BASE_URL}/transactions/list`, {
+  const response = await axios.get(`http://localhost:8000/api/v1/transactions/list`, {
     params: { category, endDate, startDate, type },
     headers: {
       Authorization: `Bearer ${token}`,

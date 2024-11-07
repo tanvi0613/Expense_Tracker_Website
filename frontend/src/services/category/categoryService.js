@@ -1,6 +1,6 @@
 import axios from "axios";
 import { getUserFromStorage } from "../../utils/getUserFromStorage";
-//import { BASE_URL } from "../../utils/url";
+//import { REACT_APP_BASE_URL } from "../../utils/url";
 
 //Get the token
 const token = getUserFromStorage();
@@ -9,7 +9,7 @@ console.log("Token:", token);
 //Add
 export const addCategoryAPI = async ({ name, type }) => {
   const response = await axios.post(
-    `${import.meta.env.BASE_URL}/categories/create`,
+    `http://localhost:8000/api/v1/categories/create`,
     {
       name,
       type,
@@ -28,7 +28,7 @@ export const addCategoryAPI = async ({ name, type }) => {
 //update
 export const updateCategoryAPI = async ({ name, type, id }) => {
   const response = await axios.put(
-    `${import.meta.env.BASE_URL}/categories/update/${id}`,
+    `http://localhost:8000/api/v1/categories/update/${id}`,
     {
       name,
       type,
@@ -46,7 +46,7 @@ export const updateCategoryAPI = async ({ name, type, id }) => {
 
 //delete
 export const deleteCategoryAPI = async (id) => {
-  const response = await axios.delete(`${import.meta.env.BASE_URL}/categories/delete/${id}`, {
+  const response = await axios.delete(`http://localhost:8000/api/v1/categories/delete/${id}`, {
     headers: {
       Authorization: `Bearer ${token}`,
     },
@@ -58,7 +58,7 @@ export const deleteCategoryAPI = async (id) => {
 
 //lists
 export const listCategoriesAPI = async () => {
-  const response = await axios.get(`${import.meta.env.BASE_URL}/categories/list`, {
+  const response = await axios.get(`http://localhost:8000/api/v1/categories/list`, {
     headers: {
       Authorization: `Bearer ${token}`,
     },

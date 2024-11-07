@@ -1,47 +1,108 @@
+// import { getUserFromStorage } from "../../utils/getUserFromStorage";
+// import axios from "axios";
+
+// //Get the token
+// const token = getUserFromStorage();
+
+// //Login
+// export const loginAPI = async ({ email, password }) => {
+//   const response = await axios.post(`http://localhost:8000/api/v1/users/login`, {
+//     email,
+//     password,
+//   });
+
+//   //Return a promise
+//   return response.data;
+// };
+
+
+// //register
+// export const registerAPI = async ({ email, password, username }) => {
+//   const response = await axios.post(`http://localhost:8000/api/v1/users/register`, {
+//     email,
+//     password,
+//     username,
+//   });
+
+//   //Return a promise
+//   return response.data;
+// };
+
+
+// //change password
+// export const changePasswordAPI = async (newPassword) => {
+//   const response = await axios.put(
+//     `http://localhost:8000/api/v1/users/changePassword`,
+//     {
+//       newPassword,
+//     },
+//     {
+//       headers: {
+//         Authorization: `Bearer ${token}`,
+//       },
+//     }
+//   );
+//   //Return a promise
+//   return response.data;
+// };
+
 import { getUserFromStorage } from "../../utils/getUserFromStorage";
 import axios from "axios";
 
-//Get the token
-const token = getUserFromStorage();
+// Get the token
+const token = getUserFromStorage() || ''; // Fallback to an empty string if token is undefined
 
-//Login
+// Login
 export const loginAPI = async ({ email, password }) => {
-  const response = await axios.post(`${import.meta.env.BASE_URL}/users/login`, {
-    email,
-    password,
-  });
-
-  //Return a promise
-  return response.data;
+  try {
+    const response = await axios.post(`http://localhost:8000/api/v1/users/login`, {
+      email,
+      password,
+    });
+    return response.data;
+  } catch (error) {
+    console.error("Login failed:", error);
+    return null; // Handle the error appropriately based on your application's needs
+  }
 };
 
-
-//register
+// Register
 export const registerAPI = async ({ email, password, username }) => {
-  const response = await axios.post(`${import.meta.env.BASE_URL}/users/register`, {
-    email,
-    password,
-    username,
-  });
-
-  //Return a promise
-  return response.data;
+  try {
+    const response = await axios.post(`http://localhost:8000/api/v1/users/register`, {
+      email,
+      password,
+      username,
+    });
+    return response.data;
+  } catch (error) {
+    console.error("Registration failed:", error);
+    return null; // Handle the error appropriately
+  }
 };
 
-
-//change password
+// Change Password
 export const changePasswordAPI = async (newPassword) => {
-  const response = await axios.put(
-    `${import.meta.env.BASE_URL}/users/changePassword`,
-    {
-      newPassword,
-    },
-    {
-      headers: {
-        Authorization: `Bearer ${token}`,
+  if (!token) {
+    console.error("No token found");
+    return null;
+  }
+
+  try {
+    const response = await axios.put(
+      `http://localhost:8000/api/v1/users/changePassword`,
+      {
+        newPassword,
       },
-    }
-  );
-  //Return a promise
-  return response.data;
+      {
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
+      }
+    );
+    return response.data;
+  } catch (error) {
+    console.error("Change password failed:", error);
+    return null; // Handle the error appropriately
+  }
 };

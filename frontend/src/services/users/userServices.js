@@ -61,10 +61,19 @@ export const loginAPI = async ({ email, password }) => {
     });
     return response.data;
   } catch (error) {
-    console.error("Login failed:", error);
-    return null; // Handle the error appropriately based on your application's needs
+    console.error("Login failed:", error); // Logs full error
+    if (error.response) {
+      console.error("Error response data:", error.response.data); // Logs server error details
+      console.error("Error response status:", error.response.status); // Logs HTTP status code
+    } else if (error.request) {
+      console.error("Request made but no response received:", error.request); // Logs the request details
+    } else {
+      console.error("Error setting up request:", error.message); // Logs other errors
+    }
+    return null;
   }
 };
+
 
 // Register
 export const registerAPI = async ({ email, password, username }) => {

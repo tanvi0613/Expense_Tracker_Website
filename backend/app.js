@@ -19,12 +19,13 @@ mongoose.connect(process.env.MONGODB_URI)
 // }
 // app.use(cors(corsOptions));
 const corsOptions = {
-    origin: 'https://expensetrackerwebsite.vercel.app',
+    origin: process.env.CORS_ORIGIN.split(','),
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     allowedHeaders: ['Content-Type', 'Authorization'],
-    credentials: true,  // Allow cookies and credentials
+    credentials: true,
 };
 app.use(cors(corsOptions));
+
 
 
 //MIDDLEWARES

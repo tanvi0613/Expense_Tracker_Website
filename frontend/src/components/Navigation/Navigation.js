@@ -26,7 +26,7 @@ function Navigation({ active, setActive }) {
             >
               <Link to={item.link}>
                 {item.icon}
-                <span>{item.title}</span>
+                <span className='item-title-nav'>{item.title}</span>
               </Link>
             </li>
           );

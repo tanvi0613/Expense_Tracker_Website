@@ -53,9 +53,9 @@ const UpdateCategory = () => {
             <Navigation active={active} setActive={setActive}/>
         </div>
         <form onSubmit={formik.handleSubmit} className="form-container">
-            <div className="form-header">
-                <h2 className="form-title">Update Category</h2>
-                <p className="form-subtitle">Fill in the details below.</p>
+            <div className="form-header-cat">
+                <h2 className="form-title-cat">Update Category</h2>
+                <p className="form-subtitle-cat">Fill in the details below.</p>
             </div>
             {isError && (
                 <AlertMessage
@@ -73,14 +73,14 @@ const UpdateCategory = () => {
                 />
             )}
             <div className="input-group">
-                <label htmlFor="type" className="input-label">
+                <label htmlFor="type" className="input-label-cat">
                 <FaWallet className="icon" />
                 <span>Type</span>
                 </label>
                 <select
                 {...formik.getFieldProps("type")}
                 id="type-form"
-                className="input-field"
+                className="input-field-cat"
                 >
                 <option value="">Select transaction type</option>
                 <option value="income">Income</option>
@@ -92,7 +92,7 @@ const UpdateCategory = () => {
             </div>
 
             <div className="input-group">
-                <label htmlFor="name" className="input-label">
+                <label htmlFor="name" className="input-label-cat">
                 <SiDatabricks className="icon" />
                 Name
                 </label>
@@ -101,14 +101,14 @@ const UpdateCategory = () => {
                 {...formik.getFieldProps("name")}
                 placeholder="Name"
                 id="name"
-                className="input-field"
+                className="input-field-cat"
                 />
                 {formik.touched.name && formik.errors.name && (
                 <p className="error-text">{formik.errors.name}</p>
                 )}
             </div>
 
-            <button type="submit" className="submit-button">
+            <button type="submit" className="submit-button-cat">
                 Update Category
             </button>
         </form>

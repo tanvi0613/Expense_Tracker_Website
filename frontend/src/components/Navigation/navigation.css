@@ -24,6 +24,13 @@
     color: black;
 }
 
+.item-title-nav{
+    white-space: nowrap;
+    font-family: "NonBureauRegularItalic", sans-serif;
+    letter-spacing: 0.1em;
+    font-style: normal;
+}
+
 .profile-h2{
     margin-left:-160px;
 }
@@ -54,7 +61,7 @@
 
 .menu-items li a {
     text-decoration: none;
-    color: inherit; /* Keep the color the same as the parent <li> */
+    color: inherit;
 }
 
 .menu-items li i {

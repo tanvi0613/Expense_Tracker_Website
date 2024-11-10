@@ -13,6 +13,7 @@
   
   .filter-input,
   .filter-select {
+    font-family: 'NonBureauLightItalic';
     padding: 8px;
     border-radius: 6px;
     border: 1px solid #a1a1a1;
@@ -39,9 +40,9 @@
   }
   
   .transaction-title {
-    font-family: 'BehanceFont', sans-serif;
+    font-family: "NonBureauBold", sans-serif;
     letter-spacing: 0.2em;
-    font-size: 1.25rem;
+    font-size: 1.50rem;
     color: #374151;
     font-weight: 600;
     margin-bottom: 8px;
@@ -58,6 +59,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 12px;
+    font-family: 'NonBureauLightItalic';
     background-color: #e7e6e6;
     border-radius: 6px;
     margin-bottom: 8px;
@@ -65,11 +67,11 @@
   }
   
   .transaction-item.income {
-    border-left: 4px solid #1ABC9C;
+    border-left: 4px solid #2E7D32;
   }
   
   .transaction-item.expense {
-    border-left: 4px solid #8E44AD;
+    border-left: 4px solid #C62828;
   }
   
   .transaction-date {

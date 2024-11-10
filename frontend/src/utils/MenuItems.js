@@ -2,7 +2,7 @@ import {dashboard, addCategory, transactions, categories} from '../utils/icons'
 export const menuItems = [
     {
         id: 1,
-        title: 'DashBoard',
+        title: 'Dashboard',
         icon:dashboard,
         link:'/dashboard'
     },

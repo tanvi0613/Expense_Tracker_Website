@@ -16,7 +16,49 @@ body {
     font-weight: normal;
     font-style: normal;
   }
-  
+
+  @font-face {
+    font-family: 'Behance2'; 
+    src: url('../public/fonts/Behance2.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'NonBureauBold'; 
+    src: url('../public/fonts/NonBureauBold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'NonBureauMedium'; 
+    src: url('../public/fonts/NonBureauMedium.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'NonBureauRegularItalic'; 
+    src: url('../public/fonts/NonBureauRegularItalic.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'NonBureauLightItalic'; 
+    src: url('../public/fonts/NonBureauLightItalic.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Blinders'; 
+    src: url('../public/fonts/blinders.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
   .cursor__dot div {
     z-index: 999999 !important;
   }

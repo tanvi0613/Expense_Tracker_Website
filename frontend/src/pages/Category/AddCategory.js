@@ -47,9 +47,9 @@ const AddCategory = () => {
       </div>
       <form onSubmit={formik.handleSubmit} className="category-container">
           <div className="text-center">
-              <h2 className="form-title">Add New Category</h2>
-              <p className="form-subtitle">Categorize expenses wisely to understand spending patterns</p>
-              <p className="form-subtitle">Fill in the details below.</p>
+              <h2 className="form-title-cat">Add New Category</h2>
+              <p className="form-subtitle-cat">Categorize expenses wisely to understand spending patterns</p>
+              <p className="form-subtitle-cat">Fill in the details below.</p>
           </div>
           {isError && (
               <AlertMessage
@@ -67,10 +67,10 @@ const AddCategory = () => {
               />
           )}
           <div className="form-group">
-              <label htmlFor="type" className="form-label">
+              <label htmlFor="type" className="form-label-cat">
               <FaWallet className="icon-category" /> Type
               </label>
-              <select {...formik.getFieldProps("type")} id="type-form" className="form-input">
+              <select {...formik.getFieldProps("type")} id="type-form" className="form-input-cat">
               <option value="">Select transaction type</option>
               <option value="income">Income</option>
               <option value="expense">Expense</option>
@@ -81,7 +81,7 @@ const AddCategory = () => {
           </div>
 
           <div className="form-group">
-              <label htmlFor="name" className="form-label">
+              <label htmlFor="name" className="form-label-cat">
               <SiDatabricks className="icon-category" /> Name
               </label>
               <input
@@ -89,14 +89,14 @@ const AddCategory = () => {
               {...formik.getFieldProps("name")}
               id="name"
               placeholder="Name"
-              className="form-input"
+              className="form-input-cat"
               />
               {formik.touched.name && formik.errors.name && (
               <p className="form-error">{formik.errors.name}</p>
               )}
           </div>
 
-          <button type="submit" className="form-button">
+          <button type="submit" className="form-button-cat">
               Add Category
           </button>
       </form>

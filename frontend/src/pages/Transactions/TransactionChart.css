@@ -10,16 +10,16 @@
 }
 
 .chart-text{
-    font-family: 'BehanceFont', sans-serif;
+  font-family: "NonBureauBold", sans-serif;
 }
 
 .chart-text-history{
-    font-family: 'BehanceFont', sans-serif;
-    top:30px;
-    left:840px;
-    white-space: nowrap;
-    position: absolute;
-    font-size: 27px;
+  font-family: "NonBureauBold", sans-serif;
+  top:30px;
+  left:840px;
+  white-space: nowrap;
+  position: absolute;
+  font-size: 27px;
 }
 
 .chart-totals{
@@ -32,7 +32,7 @@
     padding: 30px 30px 0 30px;
     border-radius: 20px;
     height:50px;
-    font-family: 'BehanceFont', sans-serif;
+    font-family: "NonBureauBold", sans-serif;
     font-weight: bold;
     font-size: larger;
     border: 2px solid #FFFFFF;
@@ -44,7 +44,7 @@
     padding: 30px 30px 0 30px;
     border-radius: 20px;
     height:50px;
-    font-family: 'BehanceFont', sans-serif;
+    font-family: "NonBureauBold", sans-serif;
     font-weight: bold;
     font-size: larger;
     border: 2px solid #FFFFFF;
@@ -74,14 +74,16 @@
     margin-bottom: 20px;
     justify-content: space-between;
     align-items: center;
+    font-family: 'NonBureauLightItalic';
+    letter-spacing: 0.1em;
   }
   
   .amount.income {
-    color: #1ABC9C;
+    color: #2E7D32;
   }
   
   .amount.expense {
-    color: #8E44AD;
+    color: #C62828;
   }
   
   .no-transactions {

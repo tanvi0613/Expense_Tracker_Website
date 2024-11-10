@@ -24,7 +24,11 @@
 .text-topNav {
     margin: 0 50px 0 12px;
     color: black;
-    font-family: 'BehanceFont', sans-serif;
+    font-family: "NonBureauBold", sans-serif;
+    letter-spacing: 0.1em;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
 }
 
 .rightSide {
@@ -42,8 +46,11 @@
     display: grid;
     grid-template-columns: 40px auto;
     align-items: center;
-    margin: 0.6rem 0;
-    font-weight: 500;
+    margin: 0.5rem 0;
+    font-family: "NonBureauRegularItalic", sans-serif;
+    letter-spacing: 0.1em;
+    font-optical-sizing: auto;
+    font-style: normal;
     cursor: pointer;
     transition: all 0.4s ease-in-out;
     color: black;
@@ -70,6 +77,10 @@
     cursor: pointer;
     transition: all 0.4s ease-in-out;
     color: black;
+    font-family: "NonBureauRegularItalic", sans-serif;
+    letter-spacing: 0.1em;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 
 .leftSide li i {

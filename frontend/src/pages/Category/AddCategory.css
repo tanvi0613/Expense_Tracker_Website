@@ -34,29 +34,35 @@
     text-align: center;
   }
   
-  .form-title {
-    font-family: 'BehanceFont', sans-serif;
-    letter-spacing: 0.2em;
-    font-size: 28px;
+  .form-title-cat{
+    font-family: "NonBureauBold", sans-serif;
+    word-spacing: 0.3em;
+    letter-spacing: 0.1em;
+    font-size: 30px;
     font-weight: 600;
     color: #333;
   }
   
-  .form-subtitle {
+  .form-subtitle-cat{
     color: #565656;
-    font-family: Oswald , sans-serif;
+    font-family: "NonBureauMedium", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
     letter-spacing: 0.1em;
-    font-size: large;
   }
   
   .form-group {
     margin-bottom: 1.5rem;
   }
   
-  .form-label {
+  .form-label-cat {
     display: flex;
     align-items: center;
+    font-family: "NonBureauMedium", sans-serif;
+    font-optical-sizing: auto;
     font-weight: 500;
+    font-style: normal;
     color: #444;
     margin-bottom: 0.5rem;
   }
@@ -70,7 +76,7 @@
   height:50px;
   width:100%;
 }
-  .form-input {
+  .form-input-cat {
     width: 97%;
     height:30px;
     padding: 0.75rem;
@@ -78,9 +84,13 @@
     border-radius: 4px;
     background-color: #5656569a;
     transition: border-color 0.3s;
+    font-family: "NonBureauMedium", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
   }
   
-  .form-input:focus {
+  .form-input-cat:focus {
     border-color: #5656569a;
     outline: none;
     box-shadow: 0 0 0 3px #5656569a;
@@ -92,7 +102,7 @@
     margin-top: 0.25rem;
   }
   
-  .form-button {
+  .form-button-cat {
     display: block;
     width: 100%;
     padding: 0.75rem;
@@ -104,11 +114,16 @@
     margin-top: 70px;
     border-radius: 4px;
     cursor: pointer;
+    letter-spacing: 0.2em;
     transition: background-color 0.3s;
+    font-family: "NonBureauMedium", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
   }
   
-  .form-button:hover {
-    transform: scale(1.05);
+  .form-button-cat:hover {
+    transform: scale(1.03);
     background-color: rgb(18, 18, 18);
   }
   

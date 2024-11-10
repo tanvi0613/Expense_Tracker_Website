@@ -27,22 +27,26 @@
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   }
   
-  .form-header {
+  .form-header-cat {
     text-align: center;
     margin-bottom: 1.5rem;
   }
   
-  .form-title {
-    font-family: 'BehanceFont', sans-serif;
-    letter-spacing: 0.2em;
-    font-size: 28px;
+  .form-title-cat {
+    font-family: "NonBureauBold", sans-serif;
+    word-spacing: 0.3em;
+    letter-spacing: 0.1em;
+    font-size: 30px;
     font-weight: 600;
     color: #333;
   }
   
-  .form-subtitle {
+  .form-subtitle-cat {
     color: #565656;
-    font-family: Oswald , sans-serif;
+    font-family: "NonBureauMedium", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
     letter-spacing: 0.1em;
     font-size: large;
   }
@@ -51,10 +55,13 @@
     margin-bottom: 1.5rem;
   }
   
-  .input-label {
+  .input-label-cat {
     display: flex;
     align-items: center;
+    font-family: "NonBureauMedium", sans-serif;
+    font-optical-sizing: auto;
     font-weight: 500;
+    font-style: normal;
     color: #444;
     margin-bottom: 0.5rem;
   }
@@ -69,17 +76,21 @@
     width:100%;
   }
 
-  .input-field {
+  .input-field-cat{
     width: 97%;
     height:30px;
     padding: 0.75rem;
     border: 1px solid #ccc;
     border-radius: 4px;
     background-color: #5656569a;
+    font-family: "NonBureauMedium", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
     transition: border-color 0.3s;
   }
   
-  .input-field:focus {
+  .input-field-cat:focus {
     border-color: #5656569a;
     outline: none;
     box-shadow: 0px 0px 5px #5656569a;
@@ -91,22 +102,26 @@
     margin-top: 0.25rem;
   }
   
-  .submit-button {
+  .submit-button-cat{
     display: block;
     width: 100%;
     padding: 0.75rem;
     background-color: #565656ee;
     color: #fff;
     height:50px;
-    font-weight: bold;
+    font-family: "NonBureauMedium", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
     border: none;
+    letter-spacing: 0.2em;
     margin-top: 70px;
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s;
   }
   
-  .submit-button:hover {
+  .submit-button-cat:hover {
     transform: scale(1.03);
     background-color: rgb(18, 18, 18);
   }

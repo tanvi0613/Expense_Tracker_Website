@@ -64,7 +64,7 @@ const TransactionForm = () => {
         </div>
         <form onSubmit={formik.handleSubmit} className="form-container">
             <div className="form-header">
-                <h2>Transaction Details</h2>
+                <h2>TRANSACTION DETAILS</h2>
                 <p>Fill in the details below.</p>
             </div>
 

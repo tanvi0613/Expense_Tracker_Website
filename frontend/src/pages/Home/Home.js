@@ -27,9 +27,7 @@ function Landing() {
                 </div>
                 </div>
                 <div className="side">
-                <h3>
-                    <button className="landing-btn2">Connect With Us</button>
-                </h3>
+                
                 <img src={phone} alt="phone" className='phone'/>
                 </div>
             </div>

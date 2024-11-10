@@ -55,7 +55,7 @@ const token = getUserFromStorage() || ''; // Fallback to an empty string if toke
 // Login
 export const loginAPI = async ({ email, password }) => {
   try {
-    const response = await axios.post(`http://localhost:8000/api/v1/users/login`, {
+    const response = await axios.post(`https://expense-tracker-website-it69.onrender.com/api/v1/users/login`, {
       email,
       password,
     });
@@ -78,7 +78,7 @@ export const loginAPI = async ({ email, password }) => {
 // Register
 export const registerAPI = async ({ email, password, username }) => {
   try {
-    const response = await axios.post(`http://localhost:8000/api/v1/users/register`, {
+    const response = await axios.post(`https://expense-tracker-website-it69.onrender.com/api/v1/users/register`, {
       email,
       password,
       username,
@@ -99,7 +99,7 @@ export const changePasswordAPI = async (newPassword) => {
 
   try {
     const response = await axios.put(
-      `http://localhost:8000/api/v1/users/changePassword`,
+      `https://expense-tracker-website-it69.onrender.com/api/v1/users/changePassword`,
       {
         newPassword,
       },

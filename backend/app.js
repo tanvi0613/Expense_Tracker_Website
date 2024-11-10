@@ -14,10 +14,18 @@ mongoose.connect(process.env.MONGODB_URI)
 .catch((e) => console.log(e));
 
 //cors config
+// const corsOptions = {
+//     origin : process.env.CORS_ORIGIN
+// }
+// app.use(cors(corsOptions));
 const corsOptions = {
-    origin : process.env.CORS_ORIGIN
-}
+    origin: 'https://expensetrackerwebsite.vercel.app',
+    methods: ['GET', 'POST', 'PUT', 'DELETE'],
+    allowedHeaders: ['Content-Type', 'Authorization'],
+    credentials: true,  // Allow cookies and credentials
+};
 app.use(cors(corsOptions));
+
 
 //MIDDLEWARES
 app.use(express.json())  //pass incoming data

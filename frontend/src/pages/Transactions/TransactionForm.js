@@ -202,7 +202,7 @@ const TransactionForm = () => {
       category: "",
       date: "",
       description: "",
-      currency: "INR",
+      currency: "",
     },
     validationSchema,
     onSubmit: async (values) => {

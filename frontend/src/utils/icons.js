@@ -19,7 +19,7 @@ export const piggy = <i class="fa-solid fa-piggy-bank"></i>
 export const yt = <i class="fa-brands fa-youtube"></i>
 export const card = <i class="fa-brands fa-cc-visa"></i>
 export const users = <i class="fa-solid fa-users-between-lines"></i>
-export const dollar = <i class="fa-solid fa-dollar-sign"></i>
+export const dollar = <i class="fa-solid fa-indian-rupee-sign"></i>
 export const calendar = <i class="fa-solid fa-calendar"></i>
 export const comment = <i class="fa-solid fa-comment"></i>
 export const plus = <i class="fa-solid fa-plus"></i>

@@ -225,10 +225,10 @@ function TransactionChart() {
     </div>
     <div className="chart-totals">
         <div className="chart-income-display">
-          Total Income: ${totals?.income || 0}
+          Total Income: &#8377;{totals?.income || 0}
         </div>
         <div className="chart-expense-display">
-          Total Expense: ${totals?.expense || 0}
+          Total Expense: &#8377;{totals?.expense || 0}
         </div>
     </div>
 
@@ -243,7 +243,7 @@ function TransactionChart() {
           >
             <span>{transaction.description}</span>
             <span className={`amount ${transaction.type}`}>
-              ${transaction.amount}
+              &#8377;{transaction.amount}
             </span>
           </li>
         ))}

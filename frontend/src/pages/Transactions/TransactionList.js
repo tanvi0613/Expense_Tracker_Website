@@ -110,7 +110,7 @@ const TransactionList = () => {
                     transaction.type.slice(1)}
                 </span>
                 <span className="transaction-category">
-                  {transaction.category?.name} - $
+                  {transaction.category?.name} - &#8377;
                   {transaction.amount.toLocaleString()}
                 </span>
                 <span className="transaction-description">

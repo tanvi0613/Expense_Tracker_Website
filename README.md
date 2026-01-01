@@ -26,6 +26,7 @@ Expenz is designed to simplify personal finance management. The application uses
    npm install
 3. Configure environment variables for MongoDB and JWT
 4. Run the application
+   ```bash
    npm start
 
 ## Future Enhancements

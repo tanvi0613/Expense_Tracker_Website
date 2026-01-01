@@ -23,9 +23,10 @@ Expenz is designed to simplify personal finance management. The application uses
    ```bash
    git clone https://github.com/your-username/expenz.git
 2. Install dependencies
+   ```bash
    npm install
-3. Configure environment variables for MongoDB and JWT
-4. Run the application
+4. Configure environment variables for MongoDB and JWT
+5. Run the application
    ```bash
    npm start
 
